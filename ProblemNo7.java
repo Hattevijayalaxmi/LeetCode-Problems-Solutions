@@ -1,4 +1,4 @@
-// Reverse Integer- LeetCode 7
+// Reverse Integer - LeetCode 7
 
 class Solution {
     public int reverse(int x) {
