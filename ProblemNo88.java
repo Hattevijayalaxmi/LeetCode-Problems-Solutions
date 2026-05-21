@@ -1,4 +1,4 @@
-//Merge Sorted Array- LeetCode 88
+//Merge Sorted Array - LeetCode 88
 
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
