@@ -1,4 +1,4 @@
-// Remove Duplicates from Sorted Array II - LeetCode 80
+// Remove Duplicates from Sorted Array 2 - LeetCode 80
 
 class Solution {
     public int removeDuplicates(int[] nums) {
