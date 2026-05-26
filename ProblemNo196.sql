@@ -1,4 +1,4 @@
-// Delete Duplicate Emails - LeetCode 196
+-- Delete Duplicate Emails - LeetCode 196
 
 DELETE p1
 FROM Person p1, Person p2
