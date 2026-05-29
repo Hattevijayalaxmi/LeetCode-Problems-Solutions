@@ -1,22 +1,29 @@
-// Vaild Mountain Array - LeetCode 941
-
 class Solution {
     public boolean validMountainArray(int[] arr) {
 
         int n = arr.length;
+
         if(n < 3) {
             return false;
         }
-        int i = 0;
-        while(i + 1 < n && arr[i] < arr[i + 1]) {
-            i++;
+
+        int peak = 0;
+        for(int i = 1; i < n; i++) {
+            if(arr[i] > arr[i - 1]) {
+                peak = i;
+            } else {
+                break;
+            }
         }
-        if(i == 0 || i == n - 1) {
+        if(peak == 0 || peak == n - 1) {
             return false;
         }
-        while(i + 1 < n && arr[i] > arr[i + 1]) {
-            i++;
+        for(int i = peak + 1; i < n; i++) {
+            if(arr[i] >= arr[i - 1]) {
+                return false;
+            }
         }
-        return i == n - 1;
+
+        return true;
     }
 }
